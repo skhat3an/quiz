@@ -1,0 +1,120 @@
+
+<div id="root" style="padding:1rem 0;font-family:var(--font-sans);max-width:600px;"></div>
+<script>
+var qs=[
+{q:"When a person uses a mascot for luck, he is thinking:",o:["A) Emotional thinking","B) Mythical thinking","C) Natural thinking"],a:"B"},
+{q:"If a person opposes the promotion of one of his subordinates because he does not like him, he is thinking:",o:["A) Emotional thinking","B) Mythical thinking","C) Natural thinking"],a:"A"},
+{q:"Axiom and repetition are two characteristics of:",o:["A) Emotional thinking","B) Mythical thinking","C) Natural thinking"],a:"C"},
+{q:"Improvement in natural thinking through controlling its excesses is:",o:["A) Emotional thinking","B) Mythical thinking","C) Logical thinking"],a:"C"},
+{q:"Oversimplifying the facts is one disadvantage of:",o:["A) Emotional thinking","B) Mythical thinking","C) Logical thinking"],a:"C"},
+{q:"__ is the individual's ability to express a supportive or opposing opinion in different situations with convincing reasons:",o:["A) Creative thinking","B) Critical thinking","C) Logical thinking"],a:"B"},
+{q:"Socrates' teachings represent the first documented attempt at:",o:["A) Creative thinking","B) Critical thinking","C) Logical thinking"],a:"B"},
+{q:"Thinking through which problems are solved in a scientific and disciplined way is:",o:["A) Creative thinking","B) Critical thinking","C) Scientific thinking"],a:"C"},
+{q:"__ means each researcher adds something new to knowledge:",o:["A) Accumulation","B) Organization","C) Accuracy"],a:"A"},
+{q:"__ means following specific steps according to the research method used:",o:["A) Accumulation","B) Organization","C) Accuracy"],a:"B"},
+{q:"__ means the ability to perceive problems before others notice them:",o:["A) Sensitivity to problems","B) Understanding details","C) Originality"],a:"A"},
+{q:"__ means producing unfamiliar and distinctive ideas:",o:["A) Sensitivity to problems","B) Understanding details","C) Originality"],a:"C"},
+{q:"__ is the ability and speed to produce ideas:",o:["A) Intellectual fluency","B) Verbal fluency","C) Shapes fluency"],a:"A"},
+{q:"__ relates to adapting to changing circumstances:",o:["A) Flexibility","B) Adaptive flexibility","C) Spontaneous flexibility"],a:"B"},
+{q:"__ means explaining ideas poorly and frustration when misunderstood:",o:["A) Communication difficulties","B) Emotional block"],a:"A"},
+{q:"__ includes fear of risk or negative attitude:",o:["A) Communication difficulties","B) Emotional block"],a:"B"},
+{q:"__ means only one correct answer exists:",o:["A) Culture","B) Assumptions"],a:"B"},
+{q:"__ defines how we live and limits ideas:",o:["A) Culture","B) Assumptions"],a:"A"},
+{q:"Too much or irrelevant information is:",o:["A) Distractions","B) Assumptions"],a:"A"},
+{q:"Listing positive outcomes refers to:",o:["A) Dealing with risk","B) Attitude adjustment"],a:"B"},
+{q:"Thinking outside the box refers to:",o:["A) Dealing with risk","B) Encouraging creativity"],a:"B"},
+{q:"Thinking is the movement of the mind from the unknown to the known.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Thinking can only be expressed verbally.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Using a mascot for luck is emotional thinking.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Opposing promotion due to dislike is emotional thinking.",o:["A) True","B) False"],a:"A",tf:true},
+{q:"Axiom and repetition are characteristics of scientific thinking.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Creative thinking is expressing opinions with justification.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Logical thinking improves natural thinking by controlling excesses.",o:["A) True","B) False"],a:"A",tf:true},
+{q:"Oversimplifying facts is a disadvantage of emotional thinking.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Socrates' teachings relate to creative thinking.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Scientific problem-solving is creative thinking.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Emotional thinking relies on incorrect reasoning.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Logical thinking is characterized by axioms.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Natural thinking is managing the word No.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Natural thinking depends on reasoning.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Doubt comes after criticism.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Criticism is hesitation between opposites.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Tenuous criticism defends beliefs without justification.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Dexterous criticism applies critical questions.",o:["A) True","B) False"],a:"A",tf:true},
+{q:"First attempts at logical thinking go back to Socrates.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Plato said doubt everything.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Logical thinking supports skepticism.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Critical thinking evaluates data and evidence.",o:["A) True","B) False"],a:"A",tf:true},
+{q:"Logical thinking solves problems scientifically.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Accumulation means following steps.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Mythical thinking is characterized by accuracy.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Scientific method is hindered by trial and error preference.",o:["A) True","B) False"],a:"A",tf:true},
+{q:"Choosing the best solution is the last step in the scientific method.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Creative thinking is managing No.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Scientific thinking produces new original outcomes.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Organization means adding new knowledge.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Creative thinking is linked to the left brain.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Left-brain people are random.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Fluency is generating many ideas.",o:["A) True","B) False"],a:"A",tf:true},
+{q:"Fluency is producing unique ideas.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Sensitivity to problems means noticing problems early.",o:["A) True","B) False"],a:"A",tf:true},
+{q:"Originality means producing unique ideas.",o:["A) True","B) False"],a:"A",tf:true},
+{q:"Verbal fluency is general idea production.",o:["A) True","B) False"],a:"B",tf:true},
+{q:"Mental block is inability to recall or understand.",o:["A) True","B) False"],a:"B",tf:true}
+];
+
+function shuffle(a){var b=[...a];for(var i=b.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=b[i];b[i]=b[j];b[j]=t;}return b;}
+
+var questions=shuffle(qs);
+var cur=0,score=0,done=false;
+
+function render(){
+  var root=document.getElementById('root');
+  if(cur>=questions.length){
+    var pct=Math.round(score/questions.length*100);
+    var msg=pct>=80?'Excellent!':pct>=60?'Good effort!':'Keep studying!';
+    root.innerHTML='<div style="text-align:center;padding:2rem 0;">'
+      +'<div style="font-size:42px;font-weight:500;color:var(--color-text-primary);">'+score+'/'+questions.length+'</div>'
+      +'<div style="font-size:15px;color:var(--color-text-secondary);margin:8px 0 24px;">'+pct+'% &mdash; '+msg+'</div>'
+      +'<button onclick="restart()" style="padding:10px 28px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;color:var(--color-text-primary);font-size:15px;cursor:pointer;">Try again</button>'
+      +'</div>';
+    return;
+  }
+  var q=questions[cur];
+  var pct=Math.round(cur/questions.length*100);
+  var html='<div style="height:4px;background:var(--color-background-secondary);border-radius:2px;margin-bottom:20px;">'
+    +'<div style="height:4px;background:#378ADD;border-radius:2px;width:'+pct+'%;transition:width 0.3s;"></div></div>'
+    +'<div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:8px;">Question '+(cur+1)+' of '+questions.length+' &nbsp;&middot;&nbsp; Score: '+score+(q.tf?' &nbsp;&middot;&nbsp; True / False':'')+'</div>'
+    +'<div style="font-size:16px;font-weight:500;color:var(--color-text-primary);margin-bottom:20px;line-height:1.6;">'+q.q+'</div>'
+    +'<div id="opts">';
+  q.o.forEach(function(opt,i){
+    html+='<button id="ob'+i+'" onclick="pick(\''+opt[0]+'\')" style="display:block;width:100%;text-align:left;padding:11px 14px;margin-bottom:8px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:var(--color-background-primary);color:var(--color-text-primary);font-size:15px;cursor:pointer;">'+opt+'</button>';
+  });
+  html+='</div><div id="fb" style="font-size:14px;font-weight:500;min-height:22px;margin:12px 0 8px;"></div>'
+    +'<button id="nb" onclick="next()" style="display:none;padding:9px 22px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;color:var(--color-text-primary);font-size:14px;cursor:pointer;">'+(cur+1<questions.length?'Next &rarr;':'See results &rarr;')+'</button>';
+  root.innerHTML=html;
+}
+
+function pick(letter){
+  if(done)return;
+  done=true;
+  var q=questions[cur];
+  var correct=letter===q.a;
+  if(correct)score++;
+  q.o.forEach(function(opt,i){
+    var btn=document.getElementById('ob'+i);
+    btn.disabled=true;
+    if(opt[0]===q.a){btn.style.background='var(--color-background-success)';btn.style.borderColor='var(--color-border-success)';btn.style.color='var(--color-text-success)';}
+    else if(opt[0]===letter&&!correct){btn.style.background='var(--color-background-danger)';btn.style.borderColor='var(--color-border-danger)';btn.style.color='var(--color-text-danger)';}
+  });
+  var fb=document.getElementById('fb');
+  if(correct){fb.textContent='Correct!';fb.style.color='var(--color-text-success)';}
+  else{fb.textContent='Incorrect. The correct answer is: '+q.a+') '+q.o.find(function(o){return o[0]===q.a;}).slice(3);fb.style.color='var(--color-text-danger)';}
+  document.getElementById('nb').style.display='inline-block';
+}
+
+function next(){done=false;cur++;render();}
+function restart(){questions=shuffle(qs);cur=0;score=0;done=false;render();}
+
+render();
+</script>
