@@ -71,7 +71,7 @@ var cur=0,score=0,done=false;
 function render(){
   var root=document.getElementById('root');
   if(cur>=questions.length){
-    var pct=Math.round(score/questions.length*200);
+    var pct=Math.round(score/questions.length*100);
     var msg=pct>=80?'Excellent!':pct>=60?'Good effort!':'Keep studying!';
     root.innerHTML='<div style="text-align:center;padding:2rem 0;">'
       +'<div style="font-size:42px;font-weight:500;color:var(--color-text-primary);">'+score+'/'+questions.length+'</div>'
@@ -84,8 +84,8 @@ function render(){
   var pct=Math.round(cur/questions.length*100);
   var html='<div style="height:4px;background:var(--color-background-secondary);border-radius:2px;margin-bottom:20px;">'
     +'<div style="height:4px;background:#378ADD;border-radius:2px;width:'+pct+'%;transition:width 0.3s;"></div></div>'
-    +'<div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:8px;">Question '+(cur+1)+' of '+questions.length+' &nbsp;&middot;&nbsp; Score: '+score+(q.tf?' &nbsp;&middot;&nbsp; True / False':'')+'</div>'
-    +'<div style="font-size:16px;font-weight:500;color:var(--color-text-primary);margin-bottom:20px;line-height:1.6;">'+q.q+'</div>'
+    +'<div style="font-size:16px;color:var(--color-text-secondary);margin-bottom:8px;">Question '+(cur+1)+' of '+questions.length+' &nbsp;&middot;&nbsp; Score: '+score+(q.tf?' &nbsp;&middot;&nbsp; True / False':'')+'</div>'
+    +'<div style="font-size:22px;font-weight:500;color:var(--color-text-primary);margin-bottom:20px;line-height:1.6;">'+q.q+'</div>'
     +'<div id="opts">';
   q.o.forEach(function(opt,i){
     html+='<button id="ob'+i+'" onclick="pick(\''+opt[0]+'\')" style="display:block;width:100%;text-align:left;padding:11px 14px;margin-bottom:8px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:var(--color-background-primary);color:var(--color-text-primary);font-size:15px;cursor:pointer;">'+opt+'</button>';
