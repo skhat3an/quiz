@@ -71,7 +71,7 @@ var cur=0,score=0,done=false;
 function render(){
   var root=document.getElementById('root');
   if(cur>=questions.length){
-    var pct=Math.round(score/questions.length*100);
+    var pct=Math.round(score/questions.length*200);
     var msg=pct>=80?'Excellent!':pct>=60?'Good effort!':'Keep studying!';
     root.innerHTML='<div style="text-align:center;padding:2rem 0;">'
       +'<div style="font-size:42px;font-weight:500;color:var(--color-text-primary);">'+score+'/'+questions.length+'</div>'
